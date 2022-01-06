@@ -1,13 +1,16 @@
 import React from 'react';
 import { Box, Text } from '@chakra-ui/react';
+import Layout from './Layout';
 
 function Home() {
   return (
-    <Box>
-      <Text color="white">
-        Home!
-      </Text>
-    </Box>
+    <Layout>
+      <Box>
+        <Text color="white">
+          Home!
+        </Text>
+      </Box>
+    </Layout>
   );
 }
 
