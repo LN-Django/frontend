@@ -1,14 +1,15 @@
 import { Box, Text } from '@chakra-ui/react';
 
 import React from 'react';
+import Layout from './Layout';
 
 function ProductsList() {
   return (
-    <Box>
-      <Text color="white">
-        Product List
-      </Text>
-    </Box>
+    <Layout>
+      <Box>
+        <Text color="white">Product List</Text>
+      </Box>
+    </Layout>
   );
 }
 
