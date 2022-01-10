@@ -1,14 +1,14 @@
 import React from 'react';
-import { Box, Text } from '@chakra-ui/react';
+import { Box, Heading } from '@chakra-ui/react';
 import Layout from './Layout';
 
 function Home() {
   return (
     <Layout>
       <Box>
-        <Text color="white">
-          Home!
-        </Text>
+        <Heading>
+          Welcome to our online shop!
+        </Heading>
       </Box>
     </Layout>
   );

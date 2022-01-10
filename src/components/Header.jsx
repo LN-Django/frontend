@@ -14,7 +14,17 @@ function Header() {
    *
    * @param {string} path
    */
-  const isLinkActive = (path) => (pathname === '/' ? pathname === path : path.includes(pathname));
+  const isLinkActive = (path) => {
+    if (!pathname.includes('/products')) {
+      return path === pathname;
+    }
+
+    if (path === '/') {
+      return false;
+    }
+
+    return pathname.includes(path);
+  };
 
   return (
     <Flex>
