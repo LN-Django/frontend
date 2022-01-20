@@ -10,10 +10,6 @@ function Header() {
     { text: 'Products', path: '/products' },
   ];
 
-  /**
-   *
-   * @param {string} path
-   */
   const isLinkActive = (path) => {
     if (!pathname.includes('/products')) {
       return path === pathname;
